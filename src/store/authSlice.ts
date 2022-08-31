@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { AppState } from './store';
+import { AppState } from './index';
 import { HYDRATE } from 'next-redux-wrapper';
 
 // Type for our state
@@ -11,6 +11,12 @@ export interface AuthState {
 const initialState: AuthState = {
   authState: false
 };
+
+export interface HyderateAction {
+  payload: {
+    auth: any;
+  };
+}
 
 // Actual Slice
 export const authSlice = createSlice({
@@ -24,7 +30,8 @@ export const authSlice = createSlice({
 
     // Special reducer for hydrating the state. Special case for next-redux-wrapper
     extraReducers: {
-      [HYDRATE]: (state, action): any => ({
+      // @ts-ignore
+      [HYDRATE]: (state: any, action: HyderateAction): any => ({
         ...state,
         ...action.payload.auth
       })
