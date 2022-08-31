@@ -1,0 +1,30 @@
+#!/bin/sh
+
+argospm install translate-en_ar
+argospm install translate-en_az
+argospm install translate-en_zh
+argospm install translate-en_cs
+argospm install translate-en_da
+argospm install translate-en_nl
+argospm install translate-en_eo
+argospm install translate-en_fi
+argospm install translate-en_fr
+argospm install translate-en_de
+argospm install translate-en_el
+argospm install translate-en_he
+argospm install translate-en_hi
+argospm install translate-en_hu
+argospm install translate-en_id
+argospm install translate-en_ga
+argospm install translate-en_it
+argospm install translate-en_ja
+argospm install translate-en_ko
+argospm install translate-en_fa
+argospm install translate-en_pl
+argospm install translate-en_pt
+argospm install translate-en_ru
+argospm install translate-en_sk
+argospm install translate-en_es
+argospm install translate-en_sv
+argospm install translate-en_tr
+argospm install translate-en_uk
