@@ -1,9 +1,20 @@
-import type { NextPage } from 'next';
+import type { NextPage, GetStaticProps } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale as string))
+    }
+  };
+};
 
 const Home: NextPage = () => {
+  const { t } = useTranslation();
   return (
     <div className={styles.container}>
       <Head>
@@ -13,9 +24,7 @@ const Home: NextPage = () => {
       </Head>
       <main className={styles.main}>
         <div className="px-4"></div>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <h1 className={styles.title}>{t('home.welcome')}</h1>
 
         <p className={styles.description}>
           Get started by editing{' '}
