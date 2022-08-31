@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/arindampradhan/boilerplate-nextjs/compare/v0.1.1...v0.1.2) (2022-08-31)
+
+### Features
+
+- add redux ([1fb255a](https://github.com/arindampradhan/boilerplate-nextjs/commit/1fb255a6cc3c9b3c8c94141c8beee71e1a34f0ea))
+- add translation ([8915a1c](https://github.com/arindampradhan/boilerplate-nextjs/commit/8915a1cc7e0d374d85d94beec2faf959752eb054))
+- add translation scripts ([f185573](https://github.com/arindampradhan/boilerplate-nextjs/commit/f185573089555b998eabc276a36f8c4b05f425b1))
+
+### Bug Fixes
+
+- typescript bugs ([f7c6b05](https://github.com/arindampradhan/boilerplate-nextjs/commit/f7c6b05c5ae85178eca806bb925dea459b816449))
+
 ### 0.1.1 (2022-08-31)
 
 ### Features
