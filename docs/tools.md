@@ -17,3 +17,7 @@
 # Translation library
 
 - [argostranslate](https://github.com/argosopentech/argos-translate)
+
+# Business Components Needed
+
+-
