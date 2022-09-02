@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/arindampradhan/admin-panel-next/compare/v0.1.2...v0.1.3) (2022-09-02)
+
+### Features
+
+- add web vitals ([8a1fe3d](https://github.com/arindampradhan/admin-panel-next/commit/8a1fe3d7079eaae066b49a5cbe7adb4ebc5bf55a))
+
+### Bug Fixes
+
+- encoding error in language ([e6db9b0](https://github.com/arindampradhan/admin-panel-next/commit/e6db9b0ed344d8dfc55997da7dadb4e168306256))
+- **translation:** support multiple langugages and stable json deep merge ([2372e48](https://github.com/arindampradhan/admin-panel-next/commit/2372e48a33138cdc7fcc19f1e8114dc1f4f71d6f))
+
 ### [0.1.2](https://github.com/arindampradhan/boilerplate-nextjs/compare/v0.1.1...v0.1.2) (2022-08-31)
 
 ### Features
