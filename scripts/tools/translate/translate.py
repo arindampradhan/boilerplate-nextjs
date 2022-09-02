@@ -96,8 +96,8 @@ def traverse_file(from_code, to_code):
 		
 		output_data = deep_merge(data_set2, data_set1)
 
-		with open(target_filename, 'w+') as f:
-			json_object = json.dumps(output_data, indent=2)
+		with open(target_filename, 'w+', encoding='utf8') as f:
+			json_object = json.dumps(output_data, indent=2, ensure_ascii=False)
 			f.write(json_object)
 		
 
@@ -109,7 +109,7 @@ def main():
 	languages = ['ar','az','zh','cs','da','nl','eo','fi','fr','de','el','he','hi','hu','id','ga','it','ja','ko','fa','pl','pt','ru','sk','es','sv','tr','uk']
 	"""
 	from_code= 'en'
-	languages = ['ar', 'de','es','fr','it','zh', 'hi']
+	languages = ['es']
 	for language in languages:
 		traverse_file(from_code, language)
 	
